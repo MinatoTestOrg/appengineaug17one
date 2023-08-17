@@ -7,10 +7,16 @@ jobs:
     environment: dev
     runs-on: ubuntu-latest
     container: node:16-alpine
-    
+
     steps:
     - name: Checking out repo...
       uses: actions/checkout@v3
+
+    - name: Content...
+      run: |
+        echo ${{ vars.username }}
+        echo ${{ vars.password }}
+          
     
     - name: Building...
       uses: ./.github/actions/dev-build

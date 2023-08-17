@@ -11,19 +11,6 @@ jobs:
     steps:
     - name: Checking out repo...
       uses: actions/checkout@v3
-      
-    - name: Content...
-      run: |
-        echo "${{ vars.username }}"
-        echo "${{ vars.password }}"
-
-    - name: Condition...
-      run: |
-        if [ ${{secrets.ARTIFACTORY_PASS}} == ${{vars.password}} ]; then
-          echo "Same"
-        else
-          echo "Not same"
-        fi
 
     - name: Building...
       uses: ./.github/actions/dev-build

@@ -44,6 +44,8 @@ runs:
     shell: sh
     run: |
       echo $PATH
+      sed -i 's/${env.ARTIFACTORY_USER}/${{inputs.ARTIFACTORY_USER}}/' .m2/settings.xml
+      sed -i 's/${env.ARTIFACTORY_PASS}/${{inputs.ARTIFACTORY_PASS}}/' .m2/settings.xml
       npm install -g @angular/cli
       more .m2/settings.xml
       pwd

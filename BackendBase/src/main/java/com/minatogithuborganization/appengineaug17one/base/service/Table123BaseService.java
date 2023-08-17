@@ -22,7 +22,7 @@ import com.vs.rappit.base.dal.SimpleFilter;
 import com.vs.rappit.base.dal.Sort;
 import com.vs.rappit.base.dal.Sort.Direction;
 import com.vs.rappit.base.util.ErrorCode;
-import com.vs.rappit.base.acl.IPerimeterManager
+import com.vs.rappit.base.acl.IPerimeterManager;
 import com.vs.rappit.base.exception.EntityReferenceExistsException;
 import com.vs.rappit.dataimport.constants.ImportTaskConstants;
 import org.apache.commons.lang3.StringUtils;

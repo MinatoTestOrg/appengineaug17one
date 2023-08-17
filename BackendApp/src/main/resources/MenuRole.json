@@ -1,0 +1,28 @@
+{
+  "left" : [ {
+    "pathsInvolved" : [ "/table123/table123list", "/table123/table123detail", "/table123/table123detail" ],
+    "accessControl" : [ "all", "Development Administrator" ],
+    "onClick" : "navigate_to_page",
+    "valueChange" : true,
+    "currentNode" : "43b4fa99-0133-40e2-abf2-625f42eb5912",
+    "label" : "TABLE",
+    "page" : {
+      "name" : "table123 List",
+      "sid" : "2e5d1ad5-0896-4f03-9f3b-f0ddba602560",
+      "url" : "/table123/table123list"
+    },
+    "element" : "menuItem"
+  } ],
+  "topBarLeft" : [ ],
+  "topBarMiddle" : [ ],
+  "topBarRight" : [ {
+    "pathsInvolved" : [ ],
+    "languages" : [ {
+      "code" : "en",
+      "name" : "English"
+    } ],
+    "element" : "language"
+  } ],
+  "right" : [ ],
+  "tabs" : [ ]
+}

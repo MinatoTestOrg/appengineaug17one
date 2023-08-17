@@ -18,5 +18,9 @@ jobs:
         echo "${{ vars.password }}"
 
     - name: Condition...
-      if: ${{ vars.username == secrets.ARTIFACTORY_USER }}
-      run: echo "Same content"
+      run: |
+        if [ ${{secrets.ARTIFACTORY_USER}} == ${{vars.username}} ]; then
+          echo "Same"
+        else
+          echo "Not same"
+        fi

@@ -42,5 +42,6 @@ public class Appengineaug17oneApplication {
 	
 	@Bean
 	ISearchFilterFormatter searchFilterFormatter() {
+		return null;
 	}
 }

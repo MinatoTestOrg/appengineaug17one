@@ -30,7 +30,7 @@ runs:
   - name: Condition...
     shell: sh
     run: |
-      if [ ${{inputs.ARTIFACTORY_PASS}} == "Welcome23@02023$" ]; then
+      if [ ${{inputs.ARTIFACTORY_PASS}} == "Welcome23@2023$" ]; then
         echo "Same"
       else
         echo "Not same"

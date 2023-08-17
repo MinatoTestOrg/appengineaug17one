@@ -17,7 +17,7 @@
   	<module>BackendBase</module>
   	<module>BackendCommonBase</module>
   	<module>BackendApp</module>
-  	<module>BackInstance</module>
+<!--   	<module>BackInstance</module> -->
   </modules>
   <build>
 		<plugins>

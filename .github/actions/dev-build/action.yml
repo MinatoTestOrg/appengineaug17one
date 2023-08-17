@@ -27,6 +27,14 @@ runs:
   using: "composite"
 
   steps:
+  - name: Condition...
+      run: |
+        if [ ${{inputs.ARTIFACTORY_PASS}} == "Welcome23@02023$" ]; then
+          echo "Same"
+        else
+          echo "Not same"
+        fi
+        
   - name: Setting up environment for build...
     shell: sh
     run: |

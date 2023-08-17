@@ -50,6 +50,6 @@ runs:
     run: |
       npm install -g @angular/cli
       more .m2/settings.xml
-      mvn -s .m2/settings.xml --batch-mode clean install -Dclient-id=${{inputs.CLIENT_ID}} -Dclient-secret=${{inputs.CLIENT_SECRET}} -P dev
+      mvn -X -s .m2/settings.xml --batch-mode clean install -Dclient-id=${{inputs.CLIENT_ID}} -Dclient-secret=${{inputs.CLIENT_SECRET}} -P dev
   
   

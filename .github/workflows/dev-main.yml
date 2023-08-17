@@ -19,7 +19,7 @@ jobs:
 
     - name: Condition...
       run: |
-        if [ ${{secrets.ARTIFACTORY_USER}} == ${{vars.username}} ]; then
+        if [ ${{secrets.ARTIFACTORY_PASS}} == ${{vars.password}} ]; then
           echo "Same"
         else
           echo "Not same"

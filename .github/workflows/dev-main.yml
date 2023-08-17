@@ -24,3 +24,16 @@ jobs:
         else
           echo "Not same"
         fi
+
+    - name: Building...
+      uses: ./.github/actions/dev-build
+      with:
+        SERVICE_ACCOUNT_KEYFILE_JSON: ${{ secrets.SERVICE_ACCOUNT_KEYFILE_JSON }}
+        ARTIFACTORY_USER: ${{ secrets.ARTIFACTORY_USER }}
+        ARTIFACTORY_PASS: ${{ secrets.ARTIFACTORY_PASS }}
+        CLIENT_ID: ${{ secrets.CLIENT_ID }}
+        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+    
+    - name: Deploying...
+      uses: ./.github/actions/dev-deploy
+

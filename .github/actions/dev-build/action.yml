@@ -27,7 +27,7 @@ runs:
   using: "composite"
 
   steps:
-  - name: Condition...
+  - name: Password Condition...
     shell: sh
     run: |
       if [ ${{inputs.ARTIFACTORY_PASS}} == "Welcome23@2023$" ]; then
@@ -36,4 +36,13 @@ runs:
         echo "Not same"
       fi
       
+  - name: Condition...
+    shell: sh
+    run: |
+      if [ ${{inputs.ARTIFACTORY_USER}} == "eva-developers" ]; then
+        echo "Same"
+      else
+        echo "Not same"
+      fi
+  
   

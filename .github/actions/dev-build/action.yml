@@ -48,7 +48,5 @@ runs:
   - name: Building project...
     shell: sh
     run: |
-      sed -i 's/${env.ARTIFACTORY_USER}/${{inputs.ARTIFACTORY_USER}}/' .m2/settings.xml
-      sed -i 's/${env.ARTIFACTORY_PASS}/${{inputs.env.ARTIFACTORY_PASS}}/' .m2/settings.xml
       npm install -g @angular/cli
       mvn -s .m2/settings.xml --batch-mode clean install -Dclient-id=${{inputs.CLIENT_ID}} -Dclient-secret=${{inputs.CLIENT_SECRET}} -P dev

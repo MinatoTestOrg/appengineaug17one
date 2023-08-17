@@ -3,23 +3,18 @@ description: dev-build action for the pipeline
 
 inputs:
   SERVICE_ACCOUNT_KEYFILE_JSON:
-    description: dev env's service account keyfile json
     required: true
 
   ARTIFACTORY_USER:
-    description: App's Artifactory user name
     required: true
   
   ARTIFACTORY_PASS:
-    description: App's Artifactory passcode
     required: true
 
   CLIENT_ID:
-    description: dev env's Cliend ID
     required: true
 
   CLIENT_SECRET:
-    description: dev env's Client Secret
     required: true
 
 
@@ -49,6 +44,8 @@ runs:
     shell: sh
     run: |
       echo $PATH
+      npm install -g @angular/cli
+      mvn -s .m2/settings.xml --batch-mode clean install -Dclient-id=${{inputs.CLIENT_ID}} -Dclient-secret=${{inputs.CLIENT_SECRET}} -P dev
       more .m2/settings.xml
   
   

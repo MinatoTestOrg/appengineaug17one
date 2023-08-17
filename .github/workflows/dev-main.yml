@@ -14,8 +14,8 @@ jobs:
 
     - name: Content...
       run: |
-        echo ${{ vars.username }}
-        echo ${{ vars.password }}
+        echo "${{ vars.username }}"
+        echo "${{ vars.password }}"
           
     
     - name: Building...

@@ -95,8 +95,8 @@
 				<app-version>1-0-0</app-version>
 				<env-suffix>Dev</env-suffix>
 				<spring.profiles.active>dev</spring.profiles.active>
-				<vpc-connector>projects/vb-eva-gen/locations/europe-west1/connectors/evamodeller</vpc-connector>
-				<memcached-ip>10.1.67.152:9200</memcached-ip>
+				<vpc-connector>projects/vb-eva-gen/locations/europe-west1/connectors/eva-modeller</vpc-connector>
+				<memcached-ip>10.46.0.3:11211</memcached-ip>
 				<client-secret>${CLIENT_SECRET}</client-secret>
 				<client-id>${CLIENT_ID}</client-id>
 			</properties>
